@@ -24,4 +24,5 @@ if st.button('Classify'):
             st.success('This news article is REAL.')
         else:
             st.error('This article is FAKE')
-        
+    else:
+        st.error('Please provide both title and article content')
