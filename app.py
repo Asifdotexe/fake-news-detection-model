@@ -22,5 +22,6 @@ if st.button('Classify'):
         # result
         if predictions[0] == 'REAL':
             st.success('This news article is REAL.')
-        if predictions[1] == 'FAKE':
+        else:
             st.error('This article is FAKE')
+        
