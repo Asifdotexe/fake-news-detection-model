@@ -12,3 +12,9 @@ st.title('Fake News Detection Application')
 # taking title and article inputs
 title = st.text_input('Enter the title of the news article')
 article = st.text_input('Enter the content of the news article')
+
+if st.button('Classify'):
+    if title and article:
+        input_data = title + ' ' + article
+        input_vector = vectorizer.transform([input_data])
+        predictions = model.predict(input_data)
