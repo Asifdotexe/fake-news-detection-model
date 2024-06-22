@@ -18,3 +18,9 @@ if st.button('Classify'):
         input_data = title + ' ' + article
         input_vector = vectorizer.transform([input_data])
         predictions = model.predict(input_data)
+        
+        # result
+        if predictions[0] == 'REAL':
+            st.success('This news article is REAL.')
+        if predictions[1] == 'FAKE':
+            st.error('This article is FAKE')
