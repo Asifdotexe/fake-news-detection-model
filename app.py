@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 # Assuming you have a trained model and TF-IDF vectorizer
-df = pd.read_csv('news_data.csv')  # Replace with your actual file path
+df = pd.read_csv('news.csv')  # Replace with your actual file path
 labels = df['label']
 text = df['text']
 
